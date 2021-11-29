@@ -52,10 +52,10 @@ body {
   display: inline-block;
 }
 .box1 {
-  background: rgb(255, 50, 50);
+  background: rgb(255, 214, 214);
 }
 .box2 {
-  background: rgb(255, 50, 50);
+  background: rgb(255, 214, 214);
   margin-left: -5px;
 }
 #menu {
@@ -84,7 +84,7 @@ body {
   padding-bottom: 10vh;
 }
 #middle h1 {
-  color: rgb(255, 50, 50);
+  color: rgb(231, 240, 206);
   font-size: 70px;
   text-decoration: underline;
 }
@@ -142,15 +142,15 @@ body {
   border-radius: 100px 100px 0px 0px;
 }
 #about:hover {
-  background: rgba(255, 50, 50, 0.9);
+  background: rgba(231, 240, 206, 0.9);
   cursor: pointer;
 }
 #work:hover {
-  background: rgba(255, 50, 50, 0.9);
+  background: rgba(231, 240, 206, 0.9);
   cursor: pointer;
 }
 #contact:hover {
-  background: rgba(255, 50, 50, 0.9);
+  background: rgba(231, 240, 206, 0.9);
   cursor: pointer;
 }
 #middle table {
@@ -170,13 +170,13 @@ body {
 }
 .social:hover {
   cursor: pointer;
-  color: rgb(255, 50, 50);
+  color: rgb(255, 214, 214);
 }
 .container {
   width: 90vw;
   height: 90vh;
   padding: 5vh 5vw;
-  background: rgb(255, 50, 50);
+  background: rgb(255, 214, 214);
   color: #fff;
   z-index: 9;
   position: fixed;
@@ -230,13 +230,13 @@ body {
 }
 .btn_one:hover {
   cursor: pointer;
-  color: rgb(255, 50, 50);
+  color: rgb(255, 214, 214);
   background: #fff;
 }
 .btn_two {
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
-  color: rgb(255, 50, 50);
+  color: rgb(255, 214, 214);
   background: #fff;
   border: 3px solid #fff;
   padding: 8px 40px;
@@ -300,7 +300,7 @@ body {
   font-weight: bold;
 }
 #footer a {
-  color: rgb(255, 50, 50);
+  color: rgb(255, 214, 214);
 }
 #particles-js {
   position: fixed;
@@ -315,14 +315,14 @@ body {
   background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 50, 50);
+  background: rgb(255, 214, 214);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 50, 50, 0.8);
+  background: rgba(255, 214, 214, 0.8);
 }
 ::selection {
   color: #fff;
-  background: rgb(255, 50, 50);
+  background: rgb(255, 214, 214);
 }
 
 @media (max-width: 800px) {
