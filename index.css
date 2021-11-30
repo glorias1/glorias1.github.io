@@ -178,7 +178,7 @@ body {
   height: 90vh;
   padding: 5vh 5vw;
   background: rgb(255, 214, 214);
-  color: #fff;
+  color: #000000;
   z-index: 9;
   position: fixed;
   max-height: 100vh;
