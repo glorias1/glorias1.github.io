@@ -1,3 +1,48 @@
+<?php 
+
+//Checking for errors
+ini_set('display_startup_errors',1);
+ini_set('display_errors',1);
+error_reporting(-1);
+
+//If form submit
+if(isset($_POST['submit'])){
+    
+    //Is it a real email
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){  
+        
+        $name = $_POST['name'];
+        
+        //Is there a name
+        if($name!=""){
+    
+        $from = " "; // my Email address. Put one there
+        $to = strip_tags($_POST['email']); //  Email address from the form
+
+        //Email subject
+        $subject = "Web Workshop Demo Email";
+        
+        //Add HTML contents in $message
+        $message = " ";
+
+        $headers = "From:".$from. "\r\n";
+        $headers .= "Reply-To: ". $from . "\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";  
+              
+         //Mail function   
+        mail($to,$subject,$message,$headers);
+            
+            
+        echo "Mail Sent. Thank you " . $name . ". The email you used was: ". $to;
+            
+        }else{ echo "Please enter a name"; }
+        
+    }else{ echo "Not a Valid Email"; }    
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,8 +128,8 @@
                 <h2>contact me</h2>
                 <p>
                     <form action:"mailto:gloria.cwyan919@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
+                        <input type="text" placeholder="name" name="name" required>
+                        <input type="email" placeholder="email" name="email" required><br>
                         <textarea placeholder="your message" required rows="5"></textarea><br>
                         <button class="btn_one"><input type="submit" name="submit" value="Send" /></button>
                     </form> 
