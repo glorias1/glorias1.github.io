@@ -1,8 +1,8 @@
 function showblog(){
     $("#blog_container").css("display","inherit");
-    $("#blog_container").addClass("animated slideInDown");
+    $("#blog_container").addClass("animated slideInLeft");
     setTimeout(function(){
-        $("#blog_container").removeClass("animated slideInDown");
+        $("#blog_container").removeClass("animated slideInLeft");
     },800);
 }
 function showabout(){
