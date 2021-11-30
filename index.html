@@ -9,8 +9,6 @@ echo  $message = $_POST["message"];
 $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
 mail($recipient, $subject, $mailBody, "From: $name <$email>");
-
-echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 }
 ?>
 <!DOCTYPE html>
