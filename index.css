@@ -354,6 +354,9 @@ body {
   #contact {
     display: none;
   }
+  #blog {
+    display: none;
+  }
   #work {
     display: none;
   }
