@@ -1,14 +1,13 @@
 <?php
 if(isset($_POST["submit"])) {
-$recipient = "gloria.cwyan919@gmail.com"; 
-echo $subject = "Email from Personal Website";
-echo $name = $_POST ["name"];
-echo $email = $_POST["email"];
-echo  $message = $_POST["message"];
+    $recipient = "gloria.cwyan919@gmail.com"; 
+    $subject = "Email from Personal Website";
+    $name = $_POST ["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
-$mailBody="Name: $name\nEmail: $email\n\n$message"; 
-
-mail($recipient, $subject, $mailBody, "From: $name <$email>");
+    $mailBody="Name: $name\nEmail: $email\n\n$message"; 
+    mail($recipient, $subject, $mailBody, "From: $name <$email>");
 }
 ?>
 <!DOCTYPE html>
