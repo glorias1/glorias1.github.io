@@ -5,9 +5,14 @@ if(isset($_POST["submit"])) {
     $name = $_POST ["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
+    
+    $headers = "From:".$from. "\r\n";
+    $headers .= "Reply-To: ". $from . "\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";  
 
     $mailBody="Name: $name\nEmail: $email\n\n$message"; 
-    mail($recipient, $subject, $mailBody, "From: $name <$email>");
+    mail($recipient, $subject, $mailBody, $headers);
 }
 ?>
 <!DOCTYPE html>
