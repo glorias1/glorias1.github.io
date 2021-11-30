@@ -1,3 +1,10 @@
+function showblog(){
+    $("#blog_container").css("display","inherit");
+    $("#blog_container").addClass("animated slideInDown");
+    setTimeout(function(){
+        $("#blog_container").removeClass("animated slideInDown");
+    },800);
+}
 function showabout(){
     $("#about_container").css("display","inherit");
     $("#about_container").addClass("animated slideInLeft");
