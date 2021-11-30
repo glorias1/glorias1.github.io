@@ -1,48 +1,18 @@
-<?php 
+<?php
+if(isset($_POST["submit"])) {
+$recipient = "gloria.cwyan919@gmail.com"; 
+echo $subject = "Email from Personal Website";
+echo $name = $_POST ["name"];
+echo $email = $_POST["email"];
+echo  $message = $_POST["message"];
 
-//Checking for errors
-ini_set('display_startup_errors',1);
-ini_set('display_errors',1);
-error_reporting(-1);
+ $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
-//If form submit
-if(isset($_POST['submit'])){
-    
-    //Is it a real email
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){  
-        
-        $name = $_POST['name'];
-        
-        //Is there a name
-        if($name!=""){
-    
-        $from = "gloria.cwyan919@gmail.com"; // my Email address. Put one there
-        $to = strip_tags($_POST['email']); //  Email address from the form
+mail($recipient, $subject, $mailBody, "From: $name <$email>");
 
-        //Email subject
-        $subject = "Web Workshop Demo Email";
-        
-        //Add HTML contents in $message
-        $message = " ";
-
-        $headers = "From:".$from. "\r\n";
-        $headers .= "Reply-To: ". $from . "\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";  
-              
-         //Mail function   
-        mail($to,$subject,$message,$headers);
-            
-            
-        echo "Mail Sent. Thank you " . $name . ". The email you used was: ". $to;
-            
-        }else{ echo "Please enter a name"; }
-        
-    }else{ echo "Not a Valid Email"; }    
-        
-    }
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,10 +97,10 @@ if(isset($_POST['submit'])){
             <section>
                 <h2>contact me</h2>
                 <p>
-                    <form action:"mailto:gloria.cwyan919@gmail.com" method="post" enctype="text/plain">
+                    <form action:"" method="post" >
                         <input type="text" placeholder="name" name="name" required>
                         <input type="email" placeholder="email" name="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <textarea placeholder="your message" name="message" required rows="5"></textarea><br>
                         <input class="btn_one" type="submit" name="submit" value="Send" />
                     </form> 
                 </p>
