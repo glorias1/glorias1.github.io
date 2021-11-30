@@ -8,10 +8,7 @@ body {
     overflow-x:hidden;
     scroll-behavior: smooth;
 }
-@keyframes rotate {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
+
 header {
     width:92vw;
     padding:6vh 4vw;
