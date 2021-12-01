@@ -46,12 +46,12 @@ header table {
     transition:0.4s ease-in-out;
 }
 #magnify h1:hover{
-    color:rgb(231, 240, 206);
+    color:rgb(255, 163, 132);
     cursor:pointer;
 }
 #logo {
     font-size:24px;
-    color:rgb(231, 240, 206);
+    color:rgb(255, 163, 132);
 }
 #navigation {
     text-align:right;
@@ -79,7 +79,7 @@ header table {
     font-family: 'Poppins', sans-serif;
     color:rgb(255, 44, 90);
     background:#fff;
-    border:3px solid rgb(231, 240, 206);
+    border:3px solid rgb(255, 163, 132);
     padding:8px 40px;
     width:35%;
     border-radius:80px;
@@ -88,7 +88,7 @@ header table {
     transition:0.4s ease-in-out;
 }
 .btn_one:hover {
-    box-shadow:0px 10px 30px rgba(231, 240, 206, 0.8);
+    box-shadow:0px 10px 30px rgba(255, 163, 132, 0.8);
     cursor:pointer;
     color:#fff;
     background:rgb(255, 44, 90);
