@@ -77,7 +77,7 @@ header table {
 .btn_one {
     font-size:18px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(255, 44, 90);
+    color:rgb(255, 163, 132);
     background:#fff;
     border:3px solid rgb(255, 163, 132);
     padding:8px 40px;
@@ -91,7 +91,7 @@ header table {
     box-shadow:0px 10px 30px rgba(255, 163, 132, 0.8);
     cursor:pointer;
     color:#fff;
-    background:rgb(255, 44, 90);
+    background:rgb(255, 163, 132);
 }
 #inner_div table{
     width:100%;
@@ -109,7 +109,7 @@ header table {
     font-weight:bold;
 }
 #footer a {
-    color:rgb(255, 44, 90);
+    color:rgb(255, 163, 132);
     text-decoration:none;
 }
 ::placeholder {
@@ -141,12 +141,12 @@ button:focus {
     padding:6px 30px;
     width:60%;
     margin:4vh auto;
-    box-shadow:0px 10px 20px rgba(255, 44, 90, 0.8);
-    background:rgb(255, 44, 90);
+    box-shadow:0px 10px 20px rgba(255, 163, 132, 0.8);
+    background:rgb(255, 163, 132);
     color:#fff;
     }
     .btn_one:hover {
-        box-shadow:0px 10px 40px rgba(255, 44, 90, 0.8);
+        box-shadow:0px 10px 40px rgba(255, 163, 132, 0.8);
         cursor:pointer;
     }
     #contact table tr td {
